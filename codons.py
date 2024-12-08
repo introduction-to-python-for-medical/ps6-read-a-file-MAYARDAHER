@@ -1,4 +1,9 @@
 def create_codon_dict(file_path):
-    pass # Replace the pass with your code
+   dic = {}
+   for row in rows:
+     cells = row.strip().split('\t')
+     codon = cells[0]
+     dic[codon] = cells[2]
+   return dic
 
 
